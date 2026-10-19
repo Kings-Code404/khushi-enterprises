@@ -1,0 +1,30 @@
+<%- include("../partials/admin-header", { title: "Blog Management | Khushi Enterprises" }) %>
+
+<section class="admin-dashboard">
+    <div class="dashboard-header">
+        <h1>Blog Management</h1>
+        <p>Prepare blog thumbnails and content images for SEO and marketing.</p>
+    </div>
+
+    <div class="dashboard-sections">
+        <div class="dashboard-card">
+            <h2><i class='bx bx-news'></i> Synopsis Required Module</h2>
+            <p>This page is added so the website structure matches the final synopsis and image audit requirements.</p>
+            <div class="admin-empty-state">
+                <img src="/assets/images/admin/admin-blog.webp" alt="Blog Management illustration" title="Blog Management" loading="lazy" style="max-width: 100%; height: auto; border-radius: 16px; margin-top: 12px;">
+            </div>
+        </div>
+
+        <div class="dashboard-card">
+            <h2>Image Placement Notes</h2>
+            <div class="admin-table-box">
+                <table class="admin-table">
+                    <thead><tr><th>Asset</th><th>Recommendation</th></tr></thead>
+                    <tbody><tr><td>Blog thumbnails</td><td>1200x675 WebP files in /assets/images/blogs/</td></tr><tr><td>Article hero</td><td>1200x675 WebP</td></tr><tr><td>Filenames</td><td>beanbag-buying-guide.webp, gaming-room-beanbag.webp</td></tr></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%- include("../partials/admin-footer") %>

@@ -1,0 +1,82 @@
+<%- include("partials/auth-header", { title: title }) %>
+<section class="auth-new-page">
+
+    <div class="auth-new-left">
+
+        <a href="/" class="auth-new-logo">
+            <span>F</span>
+            <strong>Khushi</strong>
+            <b>Enterprises.</b>
+        </a>
+
+        <div class="auth-new-form-box">
+
+            <h1>Verify Code</h1>
+
+            <p>
+                Please enter the code we just sent to email
+                <strong>example@gmail.com</strong>
+            </p>
+
+            <form id="verifyCodeForm">
+
+                <div class="auth-field">
+                    <label>Code *</label>
+
+                    <div class="verify-code-box">
+                        <input type="text" maxlength="1" required>
+                        <input type="text" maxlength="1" required>
+                        <input type="text" maxlength="1" required>
+                        <input type="text" maxlength="1" required>
+                        <input type="text" maxlength="1" required>
+                        <input type="text" maxlength="1" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="auth-main-btn">
+                    Verify
+                </button>
+
+                <p class="auth-switch">
+                    Didn’t receive code?
+                    <a href="#">Resend Code</a>
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="auth-new-right">
+
+        <img loading="lazy" 
+            src="/assets/images/banners/verify-code-auth.webp" 
+            alt="Interior"
+         title="Interior">
+
+        <div class="auth-review-card">
+            <p>
+                “Verify your account securely and continue shopping premium
+                beanbag products.”
+            </p>
+
+            <h3>Khushi Enterprises</h3>
+            <span>Online Beanbag Store</span>
+        </div>
+
+        <div class="auth-slider-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="active"></span>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<script defer src="/js/pages/verify_code.js"></script>
+<%- include("partials/auth-footer") %>

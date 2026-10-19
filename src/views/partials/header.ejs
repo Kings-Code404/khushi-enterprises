@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title || "Khushi Enterprises" %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/auth.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    <script defer src="/js/main.js"></script>
+
+
+    <link 
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" 
+        rel="stylesheet"
+    >
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="ke-topbar">
+    <div class="ke-topbar-inner">
+        <p>Call Us : +91-12345-67890</p>
+
+        <p>
+            Sign up and GET 25% OFF for your first order.
+            <a href="/register">Sign up now</a>
+        </p>
+
+        <div class="ke-top-socials">
+            <a href="#">f</a>
+            <a href="#">t</a>
+            <a href="#">p</a>
+            <a href="#">◎</a>
+            <a href="#">▶</a>
+        </div>
+    </div>
+</div>
+
+<!-- MAIN HEADER -->
+<header class="ke-header">
+
+    <div class="ke-header-inner">
+
+        <!-- LOGO -->
+        <a href="/" class="ke-logo">
+            <img src="/assets/images/logo/khushi-enterprises-logo.png" alt="Khushi Enterprises premium beanbag store logo" title="Khushi Enterprises" width="40" height="40" style="width: 40px; height: 40px; margin-right: 8px;">
+            <strong>Khushi</strong>
+            <b>Enterprises.</b>
+        </a>
+
+        <!-- NAVIGATION -->
+        <nav class="ke-nav">
+
+            <a href="/">Home</a>
+
+            <!-- SHOP MEGA MENU -->
+            <div class="ke-menu-item">
+                <a href="/products">Shop</a>
+
+                <div class="ke-mega-menu shop-menu">
+
+                    <div class="mega-column">
+                        <h3>Beanbags</h3>
+                        <a href="/products">Classic Beanbag</a>
+                        <a href="/products">Gaming Beanbag</a>
+                        <a href="/products">Kids Beanbag</a>
+                        <a href="/products">Lounger Beanbag</a>
+                        <a href="/products">Sofa Beanbag</a>
+                        <a href="/products">XL Beanbag</a>
+                    </div>
+
+                    <div class="mega-column">
+                        <h3>Comfort Seating</h3>
+                        <a href="/products">Relax Chair</a>
+                        <a href="/products">Floor Cushion</a>
+                        <a href="/products">Reading Chair</a>
+                        <a href="/products">Office Comfort</a>
+                        <a href="/products">Living Room</a>
+                        <a href="/products">Premium Range</a>
+                    </div>
+
+                    <div class="mega-column">
+                        <h3>By Material</h3>
+                        <a href="/products">Leatherette</a>
+                        <a href="/products">Fabric</a>
+                        <a href="/products">Cotton</a>
+                        <a href="/products">Velvet</a>
+                        <a href="/products">Fur</a>
+                        <a href="/products">Waterproof</a>
+                    </div>
+
+                    <div class="mega-column">
+                        <h3>By Use</h3>
+                        <a href="/products">Home</a>
+                        <a href="/products">Office</a>
+                        <a href="/products">Gaming Room</a>
+                        <a href="/products">Kids Room</a>
+                        <a href="/products">Reading Corner</a>
+                        <a href="/products">Outdoor</a>
+                    </div>
+
+                    <div class="mega-offer-card">
+                        <span>- Latest Offers</span>
+                        <h3>25% Off on Beanbags</h3>
+                        <a href="/products">Shop Now</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CATEGORIES MEGA MENU -->
+            <div class="ke-menu-item">
+                <a href="/products">Categories</a>
+
+                <div class="ke-mega-menu category-menu">
+
+                    <div class="mega-column">
+                        <h3>Home Comfort</h3>
+                        <a href="/products">Living Room</a>
+                        <a href="/products">Bedroom</a>
+                        <a href="/products">Kids Room</a>
+                        <a href="/products">Home Office</a>
+                        <a href="/products">Balcony</a>
+                        <a href="/products">Reading Area</a>
+                    </div>
+
+                    <div class="mega-column">
+                        <h3>Beanbag Types</h3>
+                        <a href="/products">Classic</a>
+                        <a href="/products">Premium</a>
+                        <a href="/products">Gaming</a>
+                        <a href="/products">Lounger</a>
+                        <a href="/products">Sofa Style</a>
+                        <a href="/products">Kids</a>
+                    </div>
+
+                    <div class="mega-column">
+                        <h3>Outdoor Comfort</h3>
+                        <a href="/products">Outdoor Beanbags</a>
+                        <a href="/products">Waterproof Beanbags</a>
+                        <a href="/products">Patio Seating</a>
+                        <a href="/products">Portable Seats</a>
+                        <a href="/products">Relax Seats</a>
+                        <a href="/products">Floor Seating</a>
+                    </div>
+
+                    <div class="mega-offer-card category-offer">
+                        <span>- Latest Offers</span>
+                        <h3>15% Off on Beanbags</h3>
+                        <a href="/products">Shop Now</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <a href="/about">About Us</a>
+            <a href="/contact">Contact Us</a>
+            <a href="/blog">Blog</a>
+
+        </nav>
+
+        <!-- HEADER ICONS -->
+        <div class="ke-header-icons">
+
+            <button class="ke-icon-btn" id="searchToggle">
+                <i class='bx bx-search'></i>
+            </button>
+
+            <a href="/wishlist" class="ke-icon-btn">
+                <i class='bx bx-heart'></i>
+            </a>
+
+            <a href="/cart" class="ke-icon-btn">
+                <i class='bx bx-cart'></i>
+            </a>
+
+            <a href="/profile" class="ke-icon-btn">
+                <i class='bx bx-user'></i>
+            </a>
+
+            <button class="ke-menu-toggle" id="mobileMenuBtn">
+                <i class='bx bx-menu'></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- SEARCH BAR -->
+    <div class="ke-search-box" id="searchBox">
+        <input 
+            type="text" 
+            id="headerSearchInput" 
+            placeholder="Search beanbags..."
+        >
+
+        <button onclick="searchFromHeader()">
+            Search
+        </button>
+    </div>
+
+</header>
+
+<!-- MOBILE MENU -->
+<div class="ke-mobile-nav" id="mobileNav">
+    <a href="/">Home</a>
+    <a href="/products">Shop</a>
+    <a href="/products">Categories</a>
+    <a href="/about">About Us</a>
+    <a href="/contact">Contact Us</a>
+    <a href="/blog">Blog</a>
+    <a href="/wishlist">Wishlist</a>
+    <a href="/cart">Cart</a>
+    <a href="/profile">My Account</a>
+</div>

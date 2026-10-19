@@ -1,0 +1,232 @@
+<%- include("partials/header", { title: "My Account | Khushi Enterprises" }) %>
+
+<section class="shop-banner">
+    <h1>My Account</h1>
+    <p><a href="/">Home</a> / My Account</p>
+</section>
+
+<section class="account-section">
+
+    <aside class="account-sidebar">
+        <button class="account-tab active" data-tab="personal">Personal Information</button>
+        <button class="account-tab" data-tab="orders">My Orders</button>
+        <button class="account-tab" data-tab="address">Manage Address</button>
+        <button class="account-tab" data-tab="payment">Payment Method</button>
+        <button class="account-tab" data-tab="password">Password Manager</button>
+        <button class="account-tab" data-tab="logout">Logout</button>
+    </aside>
+
+    <main class="account-content">
+
+        <div class="account-panel active" id="personal">
+            <div class="profile-avatar">
+                <img loading="lazy" src="/assets/images/avatars/user-default.webp" alt="User" title="User">
+                <span>✎</span>
+            </div>
+
+            <form id="profileForm">
+                <div class="account-row">
+                    <div>
+                        <label>First Name *</label>
+                        <input type="text" id="firstName" placeholder="First Name">
+                    </div>
+
+                    <div>
+                        <label>Last Name *</label>
+                        <input type="text" id="lastName" placeholder="Last Name">
+                    </div>
+                </div>
+
+                <label>Email *</label>
+                <input type="email" id="email" placeholder="Email Address" disabled>
+
+                <label>Phone *</label>
+                <input type="text" id="phone" placeholder="Phone Number">
+
+                <label>Gender *</label>
+                <select id="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+
+                <button type="submit" class="account-btn">Update Changes</button>
+            </form>
+        </div>
+
+        <div class="account-panel" id="orders">
+            <div class="account-title-row">
+                <h2>Orders</h2>
+                <select>
+                    <option>All</option>
+                    <option>Pending</option>
+                    <option>Delivered</option>
+                </select>
+            </div>
+
+            <div id="accountOrders">
+                <p>Loading orders...</p>
+            </div>
+        </div>
+
+        <div class="account-panel" id="address">
+            <div class="address-list">
+                <div class="address-card">
+                    <strong>Khushi Enterprises User</strong>
+                    <p>Delhi NCR, India</p>
+                    <span>Edit</span>
+                    <span class="delete">Delete</span>
+                </div>
+            </div>
+
+            <h2>Add New Address</h2>
+
+            <form>
+                <div class="account-row">
+                    <div>
+                        <label>First Name *</label>
+                        <input type="text" placeholder="Ex. Sumit">
+                    </div>
+
+                    <div>
+                        <label>Last Name *</label>
+                        <input type="text" placeholder="Ex. Kumar">
+                    </div>
+                </div>
+
+                <label>Company Name (Optional)</label>
+                <input type="text" placeholder="Enter Company Name">
+
+                <label>Country *</label>
+                <select>
+                    <option>India</option>
+                </select>
+
+                <label>Street Address *</label>
+                <input type="text" placeholder="Enter Street Address">
+
+                <label>City *</label>
+                <select>
+                    <option>Delhi</option>
+                    <option>Noida</option>
+                    <option>Ghaziabad</option>
+                </select>
+
+                <label>State *</label>
+                <select>
+                    <option>Delhi</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Haryana</option>
+                </select>
+
+                <label>Zip Code *</label>
+                <input type="text" placeholder="Enter Zip Code">
+
+                <label>Phone *</label>
+                <input type="text" placeholder="Enter Phone Number">
+
+                <label>Email *</label>
+                <input type="email" placeholder="Enter Email Address">
+
+                <button type="button" class="account-btn">Add Address</button>
+            </form>
+        </div>
+
+        <div class="account-panel" id="payment">
+            <div class="payment-account-box">
+                <span>🅿️ Paypal</span>
+                <a href="#">Link Account</a>
+            </div>
+
+            <div class="payment-account-box">
+                <span>💳 VISA **** **** **** 8047</span>
+                <a class="delete" href="#">Delete</a>
+            </div>
+
+            <div class="payment-account-box">
+                <span>🟢 Google Pay</span>
+                <a href="#">Link Account</a>
+            </div>
+
+            <div class="card-form account-card-form">
+                <h3>Add New Credit/Debit Card</h3>
+
+                <label>Card Holder Name *</label>
+                <input type="text" placeholder="Ex. John Doe">
+
+                <label>Card Number *</label>
+                <input type="text" placeholder="4716 9627 1635 8047">
+
+                <div class="account-row">
+                    <div>
+                        <label>Expiry Date *</label>
+                        <input type="text" placeholder="02/30">
+                    </div>
+
+                    <div>
+                        <label>CVV *</label>
+                        <input type="text" placeholder="000">
+                    </div>
+                </div>
+
+                <label class="save-card">
+                    <input type="checkbox" checked>
+                    Save card for future payments
+                </label>
+
+                <button class="account-btn" type="button">Add Card</button>
+            </div>
+        </div>
+
+        <div class="account-panel" id="password">
+            <form>
+                <label>Password *</label>
+                <input type="password" placeholder="Enter Password">
+
+                <a href="/forgot-password" class="forgot-link">Forgot Password?</a>
+
+                <label>New Password</label>
+                <input type="password" placeholder="Enter Password">
+
+                <label>Confirm New Password</label>
+                <input type="password" placeholder="Enter Password">
+
+                <button type="button" class="account-btn">Update Password</button>
+            </form>
+        </div>
+
+        <div class="account-panel" id="logout">
+            <h2>Logout</h2>
+            <p>Are you sure you want to log out?</p>
+
+            <button class="account-btn" onclick="logoutUser()">Yes, Logout</button>
+        </div>
+
+    </main>
+
+</section>
+
+<section class="ke-service-strip shop-service">
+    <div>
+        <span>📦</span>
+        <h4>Free Shipping</h4>
+        <p>Free shipping for selected orders</p>
+    </div>
+
+    <div>
+        <span>💳</span>
+        <h4>Flexible Payment</h4>
+        <p>COD and UPI payment options</p>
+    </div>
+
+    <div>
+        <span>🎧</span>
+        <h4>24×7 Support</h4>
+        <p>We support online all days</p>
+    </div>
+</section>
+
+<script defer src="/js/pages/profile.js"></script>
+
+
+<%- include("partials/footer") %>

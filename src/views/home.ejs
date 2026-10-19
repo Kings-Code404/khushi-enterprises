@@ -1,0 +1,324 @@
+<%- include("partials/header", { title: "Home | Khushi Enterprises" }) %>
+
+<!-- HERO SECTION -->
+<section class="ke-hero">
+    <div class="ke-hero-left">
+        <span class="ke-tag">The Best Online Beanbag Store</span>
+
+        <h1>
+            Explore Our Modern <br>
+            Beanbag Collection
+        </h1>
+
+        <p>
+            Discover premium beanbags designed for comfort, style, and relaxation.
+            Choose by size, color, material, and price.
+        </p>
+
+        <div class="ke-hero-actions">
+            <a href="/products" class="ke-btn-primary">Shop Now</a>
+            <a href="/contact" class="ke-btn-light">Contact Us</a>
+        </div>
+
+        <div class="ke-rating">
+            <div class="ke-users">
+                <span>😊</span>
+                <span>😎</span>
+                <span>🙂</span>
+            </div>
+
+            <div>
+                <strong>4.9 Ratings</strong>
+                <p>Trusted by happy customers</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ke-hero-right">
+        <div class="ke-room-card large">
+            <img loading="lazy" src="/assets/images/hero/home-hero-beanbag-living-room.jpg" alt="Living Room Beanbag" title="Living Room Beanbag">
+            <div>
+                <h3>Living Room</h3>
+                <p>Premium Beanbag</p>
+            </div>
+        </div>
+
+        <div class="ke-room-card">
+            <img loading="lazy" src="/assets/images/hero/home-hero-relax-room.jpg" alt="Relax Room Beanbag" title="Relax Room Beanbag">
+            <div>
+                <h3>Relax Room</h3>
+                <p>Soft Comfort</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICE STRIP -->
+<section class="ke-service-strip">
+    <div>
+        <span>🚚</span>
+        <h4>Free Shipping</h4>
+        <p>Free shipping on selected orders</p>
+    </div>
+
+    <div>
+        <span>💳</span>
+        <h4>Flexible Payment</h4>
+        <p>COD and UPI payment support</p>
+    </div>
+
+    <div>
+        <span>🎧</span>
+        <h4>24/7 Support</h4>
+        <p>We are always ready to help</p>
+    </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="ke-categories">
+    <div class="ke-category-card tall">
+        <span>1000+ Items</span>
+        <h2>Beanbags</h2>
+        <p>Comfortable beanbags for every room.</p>
+
+        <ul>
+            <li>Classic Beanbags</li>
+            <li>Premium Beanbags</li>
+            <li>Kids Beanbags</li>
+            <li>Lounger Beanbags</li>
+        </ul>
+
+        <img loading="lazy" src="/assets/images/categories/classic-beanbag-category.webp" alt="Beanbag Chair" title="Beanbag Chair">
+    </div>
+
+    <div class="ke-category-card">
+        <span>750+ Items</span>
+        <h2>Sofa Style</h2>
+        <p>Soft sofa-style comfort for modern homes.</p>
+
+        <img loading="lazy" src="/assets/images/categories/premium-beanbag-category.webp" alt="Sofa Beanbag" title="Sofa Beanbag">
+    </div>
+
+    <div class="ke-category-card yellow">
+        <span>450+ Items</span>
+        <h2>Loungers</h2>
+        <p>Perfect for gaming, reading, and relaxing.</p>
+
+        <img loading="lazy" src="/assets/images/categories/lounger-beanbag-category.webp" alt="Lounger" title="Lounger">
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="ke-products-section">
+    <div class="ke-section-title">
+        <span>Our Products</span>
+        <h2>Our Beanbag Collections</h2>
+    </div>
+
+    <div class="ke-tabs">
+        <button class="active">All Products</button>
+        <button>Latest Products</button>
+        <button>Best Sellers</button>
+        <button>Featured Products</button>
+    </div>
+
+    <div class="ke-products-grid" id="homeProductGrid">
+        <p>Loading products...</p>
+    </div>
+</section>
+
+<!-- FLASH SALE -->
+<section class="ke-flash-sale">
+    <div class="ke-sale-content">
+        <span>Get 25% Off</span>
+        <h2>Flash Sale!</h2>
+        <p>Limited time offer on premium beanbag collection.</p>
+
+        <div class="ke-timer">
+            <div><strong>04</strong><span>Days</span></div>
+            <div><strong>14</strong><span>Hours</span></div>
+            <div><strong>48</strong><span>Minutes</span></div>
+            <div><strong>18</strong><span>Seconds</span></div>
+        </div>
+
+        <a href="/products" class="ke-btn-primary">Explore Now</a>
+    </div>
+
+    <div class="ke-sale-images">
+        <img loading="lazy" src="/assets/images/banners/home-sale-beanbag.webp" alt="Beanbag Sale" title="Beanbag Sale">
+        <img loading="lazy" src="/assets/images/banners/home-comfort-sale.webp" alt="Comfort Sale" title="Comfort Sale">
+    </div>
+</section>
+
+<!-- DEALS -->
+<section class="ke-deals">
+    <div class="ke-section-title">
+        <span>Today Deals</span>
+        <h2>Deals of the Day</h2>
+    </div>
+
+    <div class="ke-deals-grid">
+        <div class="ke-deal-card">
+            <img loading="lazy" src="/assets/images/products/classic/classic-green-beanbag.webp" alt="Classic Beanbag" title="Classic Beanbag">
+            <div>
+                <span>Save 15%</span>
+                <h3>Classic Comfort Beanbag</h3>
+                <p>Soft and stylish beanbag for living rooms.</p>
+                <strong>₹1,699</strong>
+            </div>
+        </div>
+
+        <div class="ke-deal-card">
+            <img loading="lazy" src="/assets/images/products/gaming/gaming-red-xl-beanbag.webp" alt="Gaming Beanbag" title="Gaming Beanbag">
+            <div>
+                <span>Save 20%</span>
+                <h3>Gaming Beanbag Chair</h3>
+                <p>Perfect comfort for long gaming sessions.</p>
+                <strong>₹2,199</strong>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROMO BANNERS -->
+<section class="ke-promo-grid">
+    <div class="ke-promo dark">
+        <div>
+            <span>Flat 20% Discount</span>
+            <h2>Latest Gaming Beanbag</h2>
+            <a href="/products">Shop Now</a>
+        </div>
+    </div>
+
+    <div class="ke-promo yellow">
+        <div>
+            <span>Flat 25% Discount</span>
+            <h2>Premium Lounger Collection</h2>
+            <a href="/products">Shop Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="ke-testimonials">
+    <div class="ke-section-title">
+        <span>Testimonials</span>
+        <h2>What Our Customers Say</h2>
+    </div>
+
+    <div class="ke-testimonial-grid">
+        <div class="ke-testimonial-card">
+            <div class="ke-client">
+                <img loading="lazy" src="/assets/images/avatars/customer-anjali.webp" alt="Customer" title="Customer">
+                <div>
+                    <h4>Leslie Alexander</h4>
+                    <p>Customer</p>
+                </div>
+            </div>
+
+            <div class="ke-stars">★★★★★</div>
+            <p>
+                The beanbag quality is excellent. It is comfortable, stylish,
+                and perfect for my living room.
+            </p>
+        </div>
+
+        <div class="ke-testimonial-card">
+            <div class="ke-client">
+                <img loading="lazy" src="/assets/images/avatars/customer-rohit.webp" alt="Customer" title="Customer">
+                <div>
+                    <h4>Jenny Wilson</h4>
+                    <p>Customer</p>
+                </div>
+            </div>
+
+            <div class="ke-stars">★★★★★</div>
+            <p>
+                Smooth shopping experience and fast delivery.
+                I really liked the product finishing.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- BLOGS -->
+<section class="ke-blogs">
+    <div class="ke-blog-header">
+        <div>
+            <span>News & Blogs</span>
+            <h2>Our Latest News & Blogs</h2>
+        </div>
+
+        <a href="/products" class="ke-btn-light">View All</a>
+    </div>
+
+    <div class="ke-blog-grid">
+        <article>
+            <img loading="lazy" src="/assets/images/blogs/blog-1.webp" alt="Blog" title="Blog">
+            <span>15 April 2026</span>
+            <h3>How to Choose the Right Beanbag for Your Home</h3>
+            <a href="#">Read More</a>
+        </article>
+
+        <article>
+            <img loading="lazy" src="/assets/images/blogs/blog-3.webp" alt="Blog" title="Blog">
+            <span>20 April 2026</span>
+            <h3>Comfort Tips for Modern Living Rooms</h3>
+            <a href="#">Read More</a>
+        </article>
+
+        <article>
+            <img loading="lazy" src="/assets/images/blogs/blog-6.webp" alt="Blog" title="Blog">
+            <span>25 April 2026</span>
+            <h3>Why Beanbags Are Perfect for Small Spaces</h3>
+            <a href="#">Read More</a>
+        </article>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="ke-faq">
+    <div class="ke-section-title">
+        <span>FAQ</span>
+        <h2>Question? Look Here.</h2>
+    </div>
+
+    <div class="ke-faq-box">
+        <details open>
+            <summary>What type of beanbags do you offer?</summary>
+            <p>We offer classic, premium, kids, lounger, and gaming beanbags.</p>
+        </details>
+
+        <details>
+            <summary>Can I return my product?</summary>
+            <p>Yes, returns are available according to our return policy.</p>
+        </details>
+
+        <details>
+            <summary>Do you provide Cash on Delivery?</summary>
+            <p>Yes, Cash on Delivery is available for supported locations.</p>
+        </details>
+
+        <details>
+            <summary>Are there discounts on bulk orders?</summary>
+            <p>Yes, you can contact us for bulk order discounts.</p>
+        </details>
+    </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="ke-newsletter">
+    <span>Our Newsletter</span>
+    <h2>Subscribe to Get Updates About Latest Beanbag Offers</h2>
+
+    <form>
+        <input type="email" placeholder="Enter Email Address">
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+
+
+
+
+<script defer src="/js/pages/home.js"></script>
+<%- include("partials/footer") %>

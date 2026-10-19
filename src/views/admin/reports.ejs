@@ -1,0 +1,13 @@
+<%- include("../partials/admin-header", { title: "Reports | Khushi Enterprises" }) %>
+<section class="admin-dashboard">
+ <div class="dashboard-header"><h1>Reports</h1><p>View sales, users, products, and revenue summary.</p></div>
+ <div class="stats-grid">
+  <div class="stat-card"><h3>Total Users</h3><span id="totalUsers">0</span></div>
+  <div class="stat-card"><h3>Total Products</h3><span id="totalProducts">0</span></div>
+  <div class="stat-card"><h3>Total Orders</h3><span id="totalOrders">0</span></div>
+  <div class="stat-card"><h3>Total Revenue</h3><span id="totalRevenue">₹0</span></div>
+ </div>
+ <div class="dashboard-card"><h2>Top Selling Products</h2><ol id="topProducts" class="admin-list"></ol></div>
+</section>
+<script defer src="/js/pages/admin_reports.js"></script>
+<%- include("../partials/admin-footer") %>

@@ -1,0 +1,186 @@
+<%- include("partials/header", { title: "Product Details | Khushi Enterprises" }) %>
+
+<!-- PRODUCT DETAILS BANNER -->
+<section class="shop-banner">
+    <h1>Shop</h1>
+    <p>
+        <a href="/">Home</a> / 
+        <a href="/products">Shop</a> / 
+        <span>Product Details</span>
+    </p>
+</section>
+
+<!-- PRODUCT DETAILS MAIN -->
+<section class="pd-section">
+    <div class="pd-container" id="productDetailsBox">
+        <p>Loading product details...</p>
+    </div>
+</section>
+
+<!-- PRODUCT TABS -->
+<section class="pd-tabs-section">
+    <div class="pd-tabs">
+        <button class="pd-tab-btn active" data-tab="description">
+            Description
+        </button>
+
+        <button class="pd-tab-btn" data-tab="information">
+            Additional Information
+        </button>
+
+        <button class="pd-tab-btn" data-tab="review">
+            Review
+        </button>
+    </div>
+
+    <div class="pd-tab-content active" id="description">
+        <p>
+            This premium beanbag is designed for comfort, relaxation, and modern home styling.
+            It is suitable for living rooms, bedrooms, gaming corners, and reading spaces.
+        </p>
+
+        <p>
+            The product is made with quality material and soft filling to provide long-lasting
+            support. Its modern design gives your room a stylish and comfortable look.
+        </p>
+
+        <ul class="pd-desc-list">
+            <li>Comfortable seating for daily use.</li>
+            <li>Perfect for gaming, reading, relaxing, and watching movies.</li>
+            <li>Lightweight and easy to move.</li>
+            <li>Available in multiple colors and sizes.</li>
+        </ul>
+    </div>
+
+    <div class="pd-tab-content" id="information">
+        <table class="pd-info-table">
+            <tr>
+                <th>Feature</th>
+                <th>Description</th>
+            </tr>
+
+            <tr>
+                <td>Material</td>
+                <td id="infoMaterial">Premium Fabric / Leatherette</td>
+            </tr>
+
+            <tr>
+                <td>Color</td>
+                <td id="infoColor">Multiple Colors</td>
+            </tr>
+
+            <tr>
+                <td>Size</td>
+                <td id="infoSize">Medium / Large / XL</td>
+            </tr>
+
+            <tr>
+                <td>Weight</td>
+                <td>Lightweight</td>
+            </tr>
+
+            <tr>
+                <td>Brand</td>
+                <td>Khushi Enterprises</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="pd-tab-content" id="review">
+        <div class="pd-review-summary">
+            <div class="pd-rating-box">
+                <h2>4.9</h2>
+                <p>out of 5</p>
+                <div>★★★★★</div>
+                <span>Customer Reviews</span>
+            </div>
+
+            <div class="pd-rating-bars">
+                <p>5 Star <span></span></p>
+                <p>4 Star <span></span></p>
+                <p>3 Star <span></span></p>
+                <p>2 Star <span></span></p>
+                <p>1 Star <span></span></p>
+            </div>
+        </div>
+
+        <div class="pd-review-list" id="reviewList">
+            <p>Loading reviews...</p>
+        </div>
+
+        <div class="pd-add-review">
+            <h3>Add your review</h3>
+            <p>Your email address will not be published. Required fields are marked *</p>
+
+            <form id="reviewForm">
+                <div class="pd-form-row">
+                    <input type="text" placeholder="Name" disabled value="Logged in user">
+                    <input type="email" placeholder="Email" disabled value="user@email.com">
+                </div>
+
+                <label>Your Rating *</label>
+                <select name="rating" required>
+                    <option value="5">★★★★★ 5</option>
+                    <option value="4">★★★★ 4</option>
+                    <option value="3">★★★ 3</option>
+                    <option value="2">★★ 2</option>
+                    <option value="1">★ 1</option>
+                </select>
+
+                <input 
+                    type="text" 
+                    name="review_title" 
+                    placeholder="Review Title"
+                >
+
+                <textarea 
+                    name="review" 
+                    placeholder="Write detailed review here" 
+                    required
+                ></textarea>
+
+                <button type="submit" class="ke-btn-primary">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- RELATED PRODUCTS -->
+<section class="ke-products-section related-products">
+    <div class="ke-section-title">
+        <span>Related Products</span>
+        <h2>Explore <span>Related Products</span></h2>
+    </div>
+
+    <div class="ke-products-grid" id="relatedProductsGrid">
+        <p>Loading related products...</p>
+    </div>
+</section>
+
+<!-- SERVICE STRIP -->
+<section class="ke-service-strip shop-service">
+    <div>
+        <span>📦</span>
+        <h4>Free Shipping</h4>
+        <p>Free shipping for selected orders</p>
+    </div>
+
+    <div>
+        <span>💳</span>
+        <h4>Flexible Payment</h4>
+        <p>COD and UPI payment options</p>
+    </div>
+
+    <div>
+        <span>🎧</span>
+        <h4>24×7 Support</h4>
+        <p>We support online all days</p>
+    </div>
+</section>
+
+<script defer src="/js/pages/product_details.js"></script>
+
+
+<%- include("partials/footer") %>

@@ -1,0 +1,43 @@
+<%- include("../partials/admin-header", { title: "Settings | Khushi Enterprises" }) %>
+
+<section class="admin-dashboard">
+
+    <div class="dashboard-header">
+        <h1>Settings</h1>
+        <p>Manage basic website settings.</p>
+    </div>
+
+    <form class="admin-form" id="settingsForm">
+
+        <input 
+            type="text" 
+            name="site_name" 
+            value="Khushi Enterprises" 
+            placeholder="Website Name"
+        >
+
+        <input 
+            type="email" 
+            name="contact_email" 
+            value="support@khushi.com" 
+            placeholder="Contact Email"
+        >
+
+        <textarea 
+            name="footer_text" 
+            placeholder="Footer Text"
+        >© 2026 Khushi Enterprises. All Rights Reserved.</textarea>
+
+        <button type="submit" class="btn">
+            Save Settings
+        </button>
+
+    </form>
+
+</section>
+
+
+
+
+<script defer src="/js/pages/admin_settings.js"></script>
+<%- include("../partials/admin-footer") %>

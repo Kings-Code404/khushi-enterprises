@@ -1,0 +1,38 @@
+<%- include("../partials/admin-header", { title: "Manage Orders | Khushi Enterprises" }) %>
+
+<section class="admin-dashboard">
+
+    <div class="dashboard-header">
+        <h1>Manage Orders</h1>
+        <p>View and update customer orders.</p>
+    </div>
+
+    <div class="admin-table-box">
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer</th>
+                    <th>Email</th>
+                    <th>Total</th>
+                    <th>Status</th>
+                    <th>Payment</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="ordersTable">
+                <tr>
+                    <td colspan="7">Loading orders...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+
+
+
+<script defer src="/js/pages/admin_orders.js"></script>
+<%- include("../partials/admin-footer") %>

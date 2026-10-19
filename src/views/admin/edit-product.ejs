@@ -1,0 +1,40 @@
+<%- include("../partials/admin-header", { title: "Edit Product | Khushi Enterprises" }) %>
+
+<section class="admin-dashboard">
+
+    <div class="dashboard-header">
+        <h1>Edit Product</h1>
+        <p>Update beanbag product information.</p>
+    </div>
+
+    <form class="admin-form" id="editProductForm" enctype="multipart/form-data">
+
+        <input type="text" name="product_name" id="product_name" placeholder="Product Name" required>
+
+        <textarea name="description" id="description" placeholder="Product Description"></textarea>
+
+        <input type="text" name="size" id="size" placeholder="Size">
+
+        <input type="text" name="color" id="color" placeholder="Color">
+
+        <input type="text" name="material" id="material" placeholder="Material">
+
+        <input type="number" name="price" id="price" placeholder="Price" required>
+
+        <input type="number" name="stock" id="stock" placeholder="Stock">
+
+        <input type="file" name="image" accept="image/*">
+
+        <button type="submit" class="btn">
+            Update Product
+        </button>
+
+    </form>
+
+</section>
+
+
+
+
+<script defer src="/js/pages/admin_edit_product.js"></script>
+<%- include("../partials/admin-footer") %>

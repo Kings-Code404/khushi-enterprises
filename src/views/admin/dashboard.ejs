@@ -1,0 +1,61 @@
+<%- include("../partials/admin-header", { title: "Admin Dashboard | Khushi Enterprises" }) %>
+
+
+
+<section class="admin-dashboard">
+
+    <div class="dashboard-header">
+        <h1>Admin Dashboard</h1>
+        <p>Manage Products, Orders, Users and Reports</p>
+    </div>
+
+    <div class="stats-grid" id="statsGrid">
+
+        <div class="stat-card">
+            <h3>Total Users</h3>
+            <span id="totalUsers">0</span>
+        </div>
+
+        <div class="stat-card">
+            <h3>Total Products</h3>
+            <span id="totalProducts">0</span>
+        </div>
+
+        <div class="stat-card">
+            <h3>Total Orders</h3>
+            <span id="totalOrders">0</span>
+        </div>
+
+        <div class="stat-card">
+            <h3>Total Revenue</h3>
+            <span id="totalRevenue">₹0</span>
+        </div>
+
+    </div>
+
+    <div class="dashboard-sections">
+
+        <div class="dashboard-card">
+            <h2>Recent Orders</h2>
+
+            <div id="recentOrders">
+                <p>Loading...</p>
+            </div>
+        </div>
+
+        <div class="dashboard-card">
+            <h2>Recent Users</h2>
+
+            <div id="recentUsers">
+                <p>Loading...</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<script defer src="/js/pages/admin_dashboard.js"></script>
+<%- include("../partials/admin-footer") %>

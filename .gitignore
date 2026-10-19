@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+.npm-cache/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Razorpay, database, and private-key files
+*.pem
+*.key
+*.p12
+*.pfx
+service-account*.json
+
+# Logs and generated files
+*.log
+logs/
+coverage/
+tmp/
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

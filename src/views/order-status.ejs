@@ -1,0 +1,95 @@
+<%- include("partials/header", { title: "Order Status | Khushi Enterprises" }) %>
+
+<!-- ORDER STATUS BANNER -->
+<section class="shop-banner">
+    <h1>Track Your Order</h1>
+    <p>
+        <a href="/">Home</a> / Track Your Order
+    </p>
+</section>
+
+<!-- ORDER STATUS PAGE -->
+<section class="order-status-section">
+
+    <div class="order-status-wrapper">
+
+        <h2>Order Status</h2>
+        <p id="statusOrderId">Order ID : Loading...</p>
+
+        <div class="status-progress-box">
+
+            <div class="status-step active">
+                <div class="status-icon">🧾</div>
+                <h4>Order Placed</h4>
+                <span class="status-check">✓</span>
+                <p>Order received</p>
+            </div>
+
+            <div class="status-step active">
+                <div class="status-icon">✅</div>
+                <h4>Accepted</h4>
+                <span class="status-check">✓</span>
+                <p>Order confirmed</p>
+            </div>
+
+            <div class="status-step" id="progressStep">
+                <div class="status-icon">📦</div>
+                <h4>In Progress</h4>
+                <span class="status-check">✓</span>
+                <p>Preparing order</p>
+            </div>
+
+            <div class="status-step" id="wayStep">
+                <div class="status-icon">🚚</div>
+                <h4>On the Way</h4>
+                <span class="status-check">✓</span>
+                <p>Out for delivery</p>
+            </div>
+
+            <div class="status-step" id="deliveredStep">
+                <div class="status-icon">🏠</div>
+                <h4>Delivered</h4>
+                <span class="status-check">✓</span>
+                <p>Delivered successfully</p>
+            </div>
+
+        </div>
+
+        <div class="status-products-box">
+            <h3>Products</h3>
+
+            <div id="statusProducts">
+                <p>Loading products...</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICE STRIP -->
+<section class="ke-service-strip shop-service">
+    <div>
+        <span>📦</span>
+        <h4>Free Shipping</h4>
+        <p>Free shipping for selected orders</p>
+    </div>
+
+    <div>
+        <span>💳</span>
+        <h4>Flexible Payment</h4>
+        <p>COD and UPI payment options</p>
+    </div>
+
+    <div>
+        <span>🎧</span>
+        <h4>24×7 Support</h4>
+        <p>We support online all days</p>
+    </div>
+</section>
+
+
+
+
+<script defer src="/js/pages/order_status.js"></script>
+<%- include("partials/footer") %>

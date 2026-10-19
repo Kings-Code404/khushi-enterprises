@@ -1,0 +1,93 @@
+<%- include("partials/auth-header", { title: title }) %>
+<section class="auth-new-page">
+
+    <!-- LEFT FORM -->
+    <div class="auth-new-left">
+
+        <a href="/" class="auth-new-logo">
+            <span>F</span>
+            <strong>Khushi</strong>
+            <b>Enterprises.</b>
+        </a>
+
+        <div class="auth-new-form-box">
+
+            <h1>Complete Your Profile</h1>
+            <p>Don’t worry, only you can see your personal data.</p>
+
+            <form id="completeProfileForm">
+
+                <div class="profile-upload-box">
+                    <label>Profile Photo (Optional)</label>
+
+                    <div class="upload-card">
+                        <input type="file" name="profile_photo" accept="image/*">
+                        <span>🖼️</span>
+                        <p>Drag a Photo</p>
+                        <strong>Browse</strong>
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <label>Phone *</label>
+                    <input 
+                        type="text" 
+                        name="phone" 
+                        placeholder="Enter Phone Number" 
+                        required
+                    >
+                </div>
+
+                <div class="auth-field">
+                    <label>Gender *</label>
+                    <select name="gender" required>
+                        <option value="">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="auth-main-btn">
+                    Complete Profile
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="auth-new-right">
+
+        <img loading="lazy" 
+            src="/assets/images/banners/complete-profile-auth.webp" 
+            alt="Interior"
+         title="Interior">
+
+        <div class="auth-review-card">
+            <p>
+                “Khushi Enterprises helps customers discover comfortable and
+                stylish beanbags for every living space.”
+            </p>
+
+            <h3>Khushi Enterprises</h3>
+            <span>Online Beanbag Store</span>
+        </div>
+
+        <div class="auth-slider-lines">
+            <span></span>
+            <span></span>
+            <span class="active"></span>
+            <span></span>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<script defer src="/js/pages/complete_profile.js"></script>
+<%- include("partials/auth-footer") %>

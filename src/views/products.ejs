@@ -1,0 +1,137 @@
+<%- include("partials/header", { title: "Shop | Khushi Enterprises" }) %>
+
+<!-- SHOP BANNER -->
+<section class="shop-banner">
+    <h1>Shop</h1>
+    <p>
+        <a href="/">Home</a> / Shop
+    </p>
+</section>
+
+<!-- SHOP AREA -->
+<section class="shop-page">
+
+    <!-- FILTER SIDEBAR -->
+    <aside class="shop-filter">
+
+        <h3>Filter Options</h3>
+
+        <div class="filter-group">
+            <h4>Category</h4>
+
+            <label><input type="checkbox" value="Bean Bags"> Bean Bags</label>
+            <label><input type="checkbox" value="Premium Bean Bags"> Premium Bean Bags</label>
+            <label><input type="checkbox" value="Kids Bean Bags"> Kids Bean Bags</label>
+            <label><input type="checkbox" value="Lounger Bean Bags"> Lounger Bean Bags</label>
+            <label><input type="checkbox" value="Gaming Bean Bags"> Gaming Bean Bags</label>
+        </div>
+
+        <div class="filter-group">
+            <h4>Price</h4>
+            <p>₹500 - ₹5000</p>
+
+            <div class="price-line">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="filter-group">
+            <h4>Color</h4>
+
+            <label><input type="radio" name="color" value="Brown"> Brown</label>
+            <label><input type="radio" name="color" value="Grey"> Grey</label>
+            <label><input type="radio" name="color" value="Black"> Black</label>
+            <label><input type="radio" name="color" value="Green"> Green</label>
+            <label><input type="radio" name="color" value="Red"> Red</label>
+            <label><input type="radio" name="color" value="Blue"> Blue</label>
+            <label><input type="radio" name="color" value="White"> White</label>
+        </div>
+
+        <div class="filter-group">
+            <h4>Material</h4>
+
+            <label><input type="checkbox" value="Leatherette"> Leatherette</label>
+            <label><input type="checkbox" value="Fabric"> Fabric</label>
+            <label><input type="checkbox" value="Cotton"> Cotton</label>
+            <label><input type="checkbox" value="Fur"> Fur</label>
+            <label><input type="checkbox" value="Velvet"> Velvet</label>
+        </div>
+
+        <div class="filter-group">
+            <h4>Availability</h4>
+
+            <label><input type="checkbox" checked> In Stock</label>
+            <label><input type="checkbox"> Out Of Stock</label>
+        </div>
+
+    </aside>
+
+    <!-- PRODUCTS SIDE -->
+    <main class="shop-content">
+
+        <div class="shop-topbar">
+            <p id="resultCount">Showing products</p>
+
+            <div class="sort-box">
+                <span>Sort by:</span>
+
+                <select id="sortProducts">
+                    <option value="default">Default Sorting</option>
+                    <option value="low">Price Low to High</option>
+                    <option value="high">Price High to Low</option>
+                    <option value="latest">Latest Products</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="active-filter">
+            <span>Active Filter</span>
+            <button>Price: ₹500 - ₹5000 ×</button>
+            <button>In Stock ×</button>
+            <a href="/products">Clear All</a>
+        </div>
+
+        <div class="shop-grid" id="productGrid">
+            <p>Loading products...</p>
+        </div>
+
+        <div class="shop-pagination">
+            <button>‹</button>
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <span>...</span>
+            <button>10</button>
+            <button>›</button>
+        </div>
+
+    </main>
+
+</section>
+
+<!-- SERVICE STRIP -->
+<section class="ke-service-strip shop-service">
+    <div>
+        <span>📦</span>
+        <h4>Free Shipping</h4>
+        <p>Free shipping for selected orders</p>
+    </div>
+
+    <div>
+        <span>💳</span>
+        <h4>Flexible Payment</h4>
+        <p>COD and UPI payment options</p>
+    </div>
+
+    <div>
+        <span>🎧</span>
+        <h4>24×7 Support</h4>
+        <p>We support online all days</p>
+    </div>
+</section>
+
+
+
+
+<script defer src="/js/pages/products.js"></script>
+<%- include("partials/footer") %>

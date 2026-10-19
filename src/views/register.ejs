@@ -1,0 +1,136 @@
+<%- include("partials/auth-header", { title: title }) %>
+<section class="auth-new-page">
+
+    <!-- LEFT FORM -->
+    <div class="auth-new-left">
+
+        <a href="/" class="auth-new-logo">
+            <span>F</span>
+            <strong>Khushi</strong>
+            <b>Enterprises.</b>
+        </a>
+
+        <div class="auth-new-form-box">
+
+            <h1>Sign Up</h1>
+            <p>Fill your information below or register with your social account.</p>
+
+            <form id="registerForm">
+
+                <div class="auth-row">
+                    <div class="auth-field">
+                        <label>First Name *</label>
+                        <input 
+                            type="text" 
+                            name="first_name" 
+                            placeholder="Enter First Name" 
+                            required
+                        >
+                    </div>
+
+                    <div class="auth-field">
+                        <label>Last Name *</label>
+                        <input 
+                            type="text" 
+                            name="last_name" 
+                            placeholder="Enter Last Name" 
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <label>Email *</label>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="Enter Email Address" 
+                        required
+                    >
+                </div>
+
+                <div class="auth-field password-field">
+                    <label>Password *</label>
+
+                    <div class="password-input">
+                        <input 
+                            type="password" 
+                            name="password" 
+                            id="registerPassword"
+                            placeholder="Enter Password" 
+                            required
+                        >
+
+                        <button type="button" onclick="toggleRegisterPassword()">
+                            👁
+                        </button>
+                    </div>
+                </div>
+
+                <label class="auth-agree">
+                    <input type="checkbox" required checked>
+                    Agree with 
+                    <a href="/terms-and-conditions">Terms & Condition</a> 
+                    and 
+                    <a href="#">Privacy Policy</a>
+                </label>
+
+                <button type="submit" class="auth-main-btn">
+                    Sign Up
+                </button>
+
+                <div class="auth-divider">
+                    <span></span>
+                    <p>or Sign Up with</p>
+                    <span></span>
+                </div>
+
+                <button type="button" class="google-btn">
+                    <span>G</span>
+                    Sign Up With Google
+                </button>
+
+                <p class="auth-switch">
+                    Already have an account?
+                    <a href="/login">Sign In</a>
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="auth-new-right">
+
+        <img loading="lazy" 
+            src="/assets/images/banners/register-auth.webp" 
+            alt="Interior"
+         title="Interior">
+
+        <div class="auth-review-card">
+            <p>
+                “Comfort starts with the right design. Khushi Enterprises brings
+                stylish beanbags for every modern space.”
+            </p>
+
+            <h3>Khushi Enterprises</h3>
+            <span>Online Beanbag Store</span>
+        </div>
+
+        <div class="auth-slider-lines">
+            <span></span>
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<script defer src="/js/pages/register.js"></script>
+<%- include("partials/auth-footer") %>

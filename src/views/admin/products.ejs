@@ -1,0 +1,41 @@
+<%- include("../partials/admin-header", { title: "Manage Products | Khushi Enterprises" }) %>
+
+<section class="admin-dashboard">
+
+    <div class="dashboard-header">
+        <h1>Manage Products</h1>
+        <p>Add, update, and delete beanbag products.</p>
+
+        <a href="/admin/products/add" class="btn">
+            Add New Product
+        </a>
+    </div>
+
+    <div class="admin-table-box">
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="productTable">
+                <tr>
+                    <td colspan="6">Loading products...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+
+
+
+<script defer src="/js/pages/admin_products.js"></script>
+<%- include("../partials/admin-footer") %>

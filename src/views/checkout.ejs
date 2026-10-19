@@ -1,0 +1,229 @@
+<%- include("partials/header", { title: "Checkout | Khushi Enterprises" }) %>
+
+<!-- CHECKOUT BANNER -->
+<section class="shop-banner">
+    <h1>Checkout</h1>
+    <p>
+        <a href="/">Home</a> / 
+        <a href="/cart">Shopping Cart</a> / 
+        Checkout
+    </p>
+</section>
+
+<!-- CHECKOUT PAGE -->
+<section class="new-checkout-section">
+
+    <div class="checkout-wrapper">
+
+        <!-- LEFT SIDE -->
+        <div class="checkout-left">
+
+            <!-- STEP BUTTONS -->
+            <div class="checkout-steps">
+                <button class="checkout-step active" data-step="billing">
+                    1. Billing Details
+                </button>
+
+                <button class="checkout-step" data-step="payment">
+                    2. Payment Method
+                </button>
+            </div>
+
+            <!-- BILLING DETAILS -->
+            <div class="checkout-panel active" id="billingPanel">
+
+                <h2>Billing Details</h2>
+
+                <form id="billingForm">
+
+                    <div class="checkout-row">
+                        <div class="checkout-field">
+                            <label>First Name *</label>
+                            <input type="text" name="first_name" placeholder="Ex. Sumit" required>
+                        </div>
+
+                        <div class="checkout-field">
+                            <label>Last Name *</label>
+                            <input type="text" name="last_name" placeholder="Ex. Kumar" required>
+                        </div>
+                    </div>
+
+                    <div class="checkout-field">
+                        <label>Company Name (Optional)</label>
+                        <input type="text" name="company" placeholder="Enter Company Name">
+                    </div>
+
+                    <div class="checkout-field">
+                        <label>Country *</label>
+                        <select name="country" required>
+                            <option value="">Select Country</option>
+                            <option value="India">India</option>
+                        </select>
+                    </div>
+
+                    <div class="checkout-field">
+                        <label>Street Address *</label>
+                        <input type="text" name="address" placeholder="Enter Street Address" required>
+                    </div>
+
+                    <div class="checkout-field">
+                        <label>City *</label>
+                        <select name="city" required>
+                            <option value="">Select City</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Noida">Noida</option>
+                            <option value="Gurugram">Gurugram</option>
+                            <option value="Ghaziabad">Ghaziabad</option>
+                            <option value="Faridabad">Faridabad</option>
+                        </select>
+                    </div>
+
+                    <div class="checkout-field">
+                        <label>State *</label>
+                        <select name="state" required>
+                            <option value="">Select State</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Haryana">Haryana</option>
+                        </select>
+                    </div>
+
+                    <div class="checkout-field">
+                        <label>Zip Code *</label>
+                        <input type="text" name="zip" placeholder="Enter Zip Code" required>
+                    </div>
+
+                    <div class="checkout-field">
+                        <label>Phone *</label>
+                        <input type="text" name="phone" placeholder="Enter Phone Number" required>
+                    </div>
+
+                    <div class="checkout-field">
+                        <label>Email *</label>
+                        <input type="email" name="email" placeholder="Enter Email Address" required>
+                    </div>
+
+                    <div class="checkout-field">
+                        <label>Delivery Address *</label>
+
+                        <div class="delivery-options">
+                            <label>
+                                <input type="radio" name="delivery_address" value="same" checked>
+                                Same as shipping address
+                            </label>
+
+                            <label>
+                                <input type="radio" name="delivery_address" value="different">
+                                Use a different billing address
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="button" class="checkout-main-btn" onclick="goToPayment()">
+                        Proceed to Payment
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- PAYMENT METHOD -->
+            <div class="checkout-panel" id="paymentPanel">
+
+                <h2>Select Payment Method</h2>
+
+                <div class="payment-methods">
+
+                    <label class="payment-box active">
+                        <input type="radio" name="payment_method" value="COD" checked>
+                        <span>💵</span>
+                        Cash On Delivery
+                    </label>
+
+                    <label class="payment-box">
+                        <input type="radio" name="payment_method" value="RAZORPAY">
+                        <span>💳</span>
+                        Razorpay Secure Checkout (UPI, Cards, Netbanking)
+                    </label>
+
+                    <p id="paymentNotice" role="status" aria-live="polite"></p>
+                    <button type="button" class="checkout-main-btn" id="confirmPaymentButton" onclick="placeOrder()">
+                        Confirm Payment
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT ORDER SUMMARY -->
+        <aside class="checkout-summary" id="checkoutSummary">
+            <h3>Order Summary</h3>
+
+            <div class="summary-line">
+                <span>Items</span>
+                <strong>0</strong>
+            </div>
+
+            <div class="summary-line">
+                <span>Sub Total</span>
+                <strong>₹0.00</strong>
+            </div>
+
+            <div class="summary-line">
+                <span>Shipping</span>
+                <strong>₹0.00</strong>
+            </div>
+
+            <div class="summary-line">
+                <span>Taxes</span>
+                <strong>₹0.00</strong>
+            </div>
+
+            <div class="summary-line discount">
+                <span>Coupon Discount</span>
+                <strong>-₹0.00</strong>
+            </div>
+
+            <div class="summary-total">
+                <span>Total</span>
+                <strong>₹0.00</strong>
+            </div>
+
+            <button class="checkout-main-btn" onclick="goToPayment()">
+                Proceed to Payment
+            </button>
+        </aside>
+
+    </div>
+
+</section>
+
+<!-- SERVICE STRIP -->
+<section class="ke-service-strip shop-service">
+    <div>
+        <span>📦</span>
+        <h4>Free Shipping</h4>
+        <p>Free shipping for selected orders</p>
+    </div>
+
+    <div>
+        <span>💳</span>
+        <h4>Flexible Payment</h4>
+        <p>COD and UPI payment options</p>
+    </div>
+
+    <div>
+        <span>🎧</span>
+        <h4>24×7 Support</h4>
+        <p>We support online all days</p>
+    </div>
+</section>
+
+
+
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script defer src="/js/pages/checkout.js"></script>
+<%- include("partials/footer") %>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/auth.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    <script defer src="/js/main.js"></script>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<div class="admin-layout">
+
+    <aside class="admin-sidebar">
+
+        <div class="admin-logo">
+            <h2>Khushi Admin</h2>
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="/admin/dashboard">
+                    <i class='bx bxs-dashboard'></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="/admin/products">
+                    <i class='bx bxs-package'></i>
+                    Products
+                </a>
+            </li>
+
+            <li>
+                <a href="/admin/products/add">
+                    <i class='bx bx-plus-circle'></i>
+                    Add Product
+                </a>
+            </li>
+
+
+            <li>
+                <a href="/admin/categories">
+                    <i class='bx bx-category'></i>
+                    Categories
+                </a>
+            </li>
+
+            <li>
+                <a href="/admin/reviews">
+                    <i class='bx bx-star'></i>
+                    Reviews
+                </a>
+            </li>
+
+            <li>
+                <a href="/admin/inventory">
+                    <i class='bx bx-bar-chart-alt-2'></i>
+                    Inventory
+                </a>
+            </li>
+
+            <li>
+                <a href="/admin/payments">
+                    <i class='bx bx-credit-card'></i>
+                    Payments
+                </a>
+            </li>
+
+            <li>
+                <a href="/admin/blogs">
+                    <i class='bx bx-news'></i>
+                    Blogs
+                </a>
+            </li>
+
+            <li>
+                <a href="/admin/orders">
+                    <i class='bx bx-cart'></i>
+                    Orders
+                </a>
+            </li>
+
+            <li>
+                <a href="/admin/users">
+                    <i class='bx bx-user'></i>
+                    Users
+                </a>
+            </li>
+
+            <li>
+                <a href="/admin/messages">
+                    <i class='bx bx-message-square-detail'></i>
+                    Messages
+                </a>
+            </li>
+
+            <li>
+                <a href="/admin/reports">
+                    <i class='bx bx-line-chart'></i>
+                    Reports
+                </a>
+            </li>
+
+            <li>
+                <a href="/admin/coupons">
+                    <i class='bx bxs-discount'></i>
+                    Coupons
+                </a>
+            </li>
+
+            <li>
+                <a href="/admin/newsletter">
+                    <i class='bx bx-envelope'></i>
+                    Newsletter
+                </a>
+            </li>
+
+            <li>
+                <a href="/admin/notifications">
+                    <i class='bx bx-bell'></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="/admin/logs">
+                    <i class='bx bx-history'></i>
+                    Admin Logs
+                </a>
+            </li>
+
+            <li>
+                <a href="/admin/settings">
+                    <i class='bx bx-cog'></i>
+                    Settings
+                </a>
+            </li>
+
+            <li>
+                <a href="/" target="_blank">
+                    <i class='bx bx-globe'></i>
+                    Visit Website
+                </a>
+            </li>
+
+            <li>
+                <button type="button" onclick="adminLogout()">
+    <i class='bx bx-log-out'></i>
+    Logout
+</button>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <main class="admin-main">

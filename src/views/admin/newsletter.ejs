@@ -1,0 +1,7 @@
+<%- include("../partials/admin-header", { title: "Newsletter Management | Khushi Enterprises" }) %>
+<section class="admin-dashboard">
+  <div class="dashboard-header"><h1>Newsletter Subscribers</h1><p>View newsletter subscription records.</p></div>
+  <div class="admin-table-box"><table class="admin-table"><thead><tr><th>ID</th><th>Email</th><th>Status</th><th>Created At</th></tr></thead><tbody id="newsletterTable"><tr><td colspan="4">Loading subscribers...</td></tr></tbody></table></div>
+</section>
+<script defer src="/js/pages/admin_newsletter.js"></script>
+<%- include("../partials/admin-footer") %>

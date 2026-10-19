@@ -1,0 +1,142 @@
+<%- include("partials/header", { title: "Contact Us | Khushi Enterprises" }) %>
+
+<!-- CONTACT BANNER -->
+<section class="shop-banner">
+    <h1>Contact Us</h1>
+    <p>
+        <a href="/">Home</a> / Contact Us
+    </p>
+</section>
+
+<!-- CONTACT PAGE -->
+<section class="new-contact-section">
+
+    <div class="contact-wrapper">
+
+        <!-- LEFT FORM -->
+        <div class="contact-form-side">
+            <h2>Get in Touch</h2>
+            <p>Your email address will not be published. Required fields are marked*</p>
+
+            <form id="contactForm">
+
+                <div class="contact-row">
+                    <div class="contact-field">
+                        <label>Your Name *</label>
+                        <input 
+                            type="text" 
+                            name="name" 
+                            placeholder="Ex. Sumit Kumar" 
+                            required
+                        >
+                    </div>
+
+                    <div class="contact-field">
+                        <label>Email *</label>
+                        <input 
+                            type="email" 
+                            name="email" 
+                            placeholder="sumit@example.com" 
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="contact-field">
+                    <label>Subject *</label>
+                    <input 
+                        type="text" 
+                        name="subject" 
+                        placeholder="Enter Subject" 
+                        required
+                    >
+                </div>
+
+                <div class="contact-field">
+                    <label>Your Message *</label>
+                    <textarea 
+                        name="message" 
+                        placeholder="Enter here..." 
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="contact-send-btn">
+                    Send Message
+                </button>
+
+            </form>
+        </div>
+
+        <!-- RIGHT INFO CARD -->
+        <div class="contact-info-card">
+
+            <div class="contact-info-block">
+                <h3>Address</h3>
+                <p>Khushi Enterprises, Delhi NCR, India</p>
+            </div>
+
+            <div class="contact-info-block">
+                <h3>Contact</h3>
+                <p>Phone : +91 12345 67890</p>
+                <p>Email : sumit.kumar271773@gmail.com</p>
+            </div>
+
+            <div class="contact-info-block">
+                <h3>Open Time</h3>
+                <p>Monday - Friday : 10:00 - 20:00</p>
+                <p>Saturday - Sunday : 11:00 - 18:00</p>
+            </div>
+
+            <div class="contact-info-block">
+                <h3>Stay Connected</h3>
+
+                <div class="contact-socials">
+                    <a href="#">f</a>
+                    <a href="#">t</a>
+                    <a href="#">p</a>
+                    <a href="#">◎</a>
+                    <a href="#">▶</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MAP SECTION -->
+<section class="contact-map">
+    <div class="map-overlay">
+        <h2>Find Us Easily</h2>
+        <p>Khushi Enterprises Online Beanbag Store</p>
+    </div>
+</section>
+
+<!-- SERVICE STRIP -->
+<section class="ke-service-strip shop-service">
+    <div>
+        <span>📦</span>
+        <h4>Free Shipping</h4>
+        <p>Free shipping for selected orders</p>
+    </div>
+
+    <div>
+        <span>💳</span>
+        <h4>Flexible Payment</h4>
+        <p>COD and UPI payment options</p>
+    </div>
+
+    <div>
+        <span>🎧</span>
+        <h4>24×7 Support</h4>
+        <p>We support online all days</p>
+    </div>
+</section>
+
+
+
+
+<script defer src="/js/pages/contact.js"></script>
+<%- include("partials/footer") %>

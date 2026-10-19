@@ -1,0 +1,71 @@
+<%- include("partials/header", { title: "Wishlist | Khushi Enterprises" }) %>
+
+<!-- WISHLIST BANNER -->
+<section class="shop-banner">
+    <h1>Wishlist</h1>
+    <p>
+        <a href="/">Home</a> / Wishlist
+    </p>
+</section>
+
+<!-- WISHLIST PAGE -->
+<section class="wishlist-section">
+
+    <div class="wishlist-table-head">
+        <span>Product</span>
+        <span>Price</span>
+        <span>Date Added</span>
+        <span>Stock Status</span>
+        <span></span>
+    </div>
+
+    <div id="wishlistBox">
+        <p>Loading wishlist...</p>
+    </div>
+
+    <div class="wishlist-bottom">
+        <div class="wishlist-link-box">
+            <span>Wishlist link:</span>
+            <input type="text" value="https://khushi-enterprises.com/wishlist" readonly>
+            <button onclick="copyWishlistLink()">Copy Link</button>
+        </div>
+
+        <div class="wishlist-actions">
+            <button class="clear-wishlist" onclick="clearWishlist()">
+                Clear Wishlist
+            </button>
+
+            <button class="add-all-cart" onclick="addAllToCart()">
+                Add All to Cart
+            </button>
+        </div>
+    </div>
+
+</section>
+
+<!-- SERVICE STRIP -->
+<section class="ke-service-strip shop-service">
+    <div>
+        <span>📦</span>
+        <h4>Free Shipping</h4>
+        <p>Free shipping for selected orders</p>
+    </div>
+
+    <div>
+        <span>💳</span>
+        <h4>Flexible Payment</h4>
+        <p>COD and UPI payment options</p>
+    </div>
+
+    <div>
+        <span>🎧</span>
+        <h4>24×7 Support</h4>
+        <p>We support online all days</p>
+    </div>
+</section>
+
+
+
+
+<script defer src="/js/pages/wishlist.js"></script>
+<%- include("partials/footer") %>

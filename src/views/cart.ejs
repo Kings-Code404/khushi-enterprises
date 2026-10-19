@@ -1,0 +1,111 @@
+<%- include("partials/header", { title: "Shopping Cart | Khushi Enterprises" }) %>
+
+<!-- CART BANNER -->
+<section class="shop-banner">
+    <h1>Shopping Cart</h1>
+    <p>
+        <a href="/">Home</a> / Shopping Cart
+    </p>
+</section>
+
+<!-- CART PAGE -->
+<section class="new-cart-section">
+
+    <div class="new-cart-container">
+
+        <!-- CART ITEMS -->
+        <div class="new-cart-left">
+
+            <div class="cart-table-head">
+                <span>Product</span>
+                <span>Price</span>
+                <span>Quantity</span>
+                <span>Subtotal</span>
+            </div>
+
+            <div id="cartItemsBox">
+                <p>Loading cart...</p>
+            </div>
+
+            <div class="cart-bottom-actions">
+                <div class="coupon-box">
+                    <input type="text" placeholder="Coupon Code">
+                    <button onclick="applyCoupon()">Apply Coupon</button>
+                </div>
+
+                <button class="clear-cart-link" onclick="clearCart()">
+                    Clear Shopping Cart
+                </button>
+            </div>
+
+        </div>
+
+        <!-- ORDER SUMMARY -->
+        <div class="new-cart-summary" id="cartSummary">
+            <h3>Order Summary</h3>
+
+            <div class="summary-line">
+                <span>Items</span>
+                <strong>0</strong>
+            </div>
+
+            <div class="summary-line">
+                <span>Sub Total</span>
+                <strong>₹0.00</strong>
+            </div>
+
+            <div class="summary-line">
+                <span>Shipping</span>
+                <strong>₹0.00</strong>
+            </div>
+
+            <div class="summary-line">
+                <span>Taxes</span>
+                <strong>₹0.00</strong>
+            </div>
+
+            <div class="summary-line discount">
+                <span>Coupon Discount</span>
+                <strong>₹0.00</strong>
+            </div>
+
+            <div class="summary-total">
+                <span>Total</span>
+                <strong>₹0.00</strong>
+            </div>
+
+            <a href="/checkout" class="checkout-btn">
+                Proceed to Checkout
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICE STRIP -->
+<section class="ke-service-strip shop-service">
+    <div>
+        <span>📦</span>
+        <h4>Free Shipping</h4>
+        <p>Free shipping for selected orders</p>
+    </div>
+
+    <div>
+        <span>💳</span>
+        <h4>Flexible Payment</h4>
+        <p>COD and UPI payment options</p>
+    </div>
+
+    <div>
+        <span>🎧</span>
+        <h4>24×7 Support</h4>
+        <p>We support online all days</p>
+    </div>
+</section>
+
+
+
+
+<script defer src="/js/pages/cart.js"></script>
+<%- include("partials/footer") %>

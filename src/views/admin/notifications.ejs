@@ -1,0 +1,13 @@
+<%- include("../partials/admin-header", { title: "Notification Management | Khushi Enterprises" }) %>
+<section class="admin-dashboard">
+  <div class="dashboard-header"><h1>Notification Management</h1><p>Create and view user notifications.</p></div>
+  <form id="notificationForm" class="admin-form" style="display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-bottom:20px;">
+    <input name="user_id" type="number" placeholder="User ID" required>
+    <input name="title" placeholder="Title" required>
+    <input name="message" placeholder="Message" required>
+    <button class="small-btn" type="submit">Send Notification</button>
+  </form>
+  <div class="admin-table-box"><table class="admin-table"><thead><tr><th>ID</th><th>User</th><th>Title</th><th>Message</th><th>Status</th></tr></thead><tbody id="notificationsTable"><tr><td colspan="5">Loading notifications...</td></tr></tbody></table></div>
+</section>
+<script defer src="/js/pages/admin_notifications.js"></script>
+<%- include("../partials/admin-footer") %>

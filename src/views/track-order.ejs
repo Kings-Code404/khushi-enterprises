@@ -1,0 +1,81 @@
+<%- include("partials/header", { title: "Track Your Order | Khushi Enterprises" }) %>
+
+<!-- TRACK ORDER BANNER -->
+<section class="shop-banner">
+    <h1>Track Your Order</h1>
+    <p>
+        <a href="/">Home</a> / Track Your Order
+    </p>
+</section>
+
+<!-- TRACK ORDER PAGE -->
+<section class="track-order-section">
+
+    <div class="track-order-box">
+
+        <p class="track-intro">
+            To track your order please enter your Order ID in the box below and press the
+            "Track Order" button. This was given to you on your receipt and in the
+            confirmation email you should have received.
+        </p>
+
+        <form id="trackOrderForm">
+
+            <div class="track-field">
+                <label>Order ID *</label>
+                <input 
+                    type="text" 
+                    name="order_id" 
+                    placeholder="Enter Your Order ID"
+                    required
+                >
+            </div>
+
+            <div class="track-field">
+                <label>Billing Email *</label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Enter Email Address"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="track-btn">
+                Track Order
+            </button>
+
+        </form>
+
+        <div id="trackResult"></div>
+
+    </div>
+
+</section>
+
+<!-- SERVICE STRIP -->
+<section class="ke-service-strip shop-service">
+    <div>
+        <span>📦</span>
+        <h4>Free Shipping</h4>
+        <p>Free shipping for selected orders</p>
+    </div>
+
+    <div>
+        <span>💳</span>
+        <h4>Flexible Payment</h4>
+        <p>COD and UPI payment options</p>
+    </div>
+
+    <div>
+        <span>🎧</span>
+        <h4>24×7 Support</h4>
+        <p>We support online all days</p>
+    </div>
+</section>
+
+
+
+
+<script defer src="/js/pages/track_order.js"></script>
+<%- include("partials/footer") %>

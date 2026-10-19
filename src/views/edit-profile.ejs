@@ -1,0 +1,34 @@
+<%- include("partials/header", { title: "Edit Profile | Khushi Enterprises" }) %>
+
+<section class="auth-section">
+    <div class="auth-container">
+        <div class="auth-card">
+            <h2>Edit Profile</h2>
+            <p>Update your account details</p>
+
+            <form id="editProfileForm">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="Full Name" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="phone" id="phone" placeholder="Phone Number">
+                </div>
+
+                <div class="form-group">
+                    <textarea name="address" id="address" placeholder="Address" rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="btn auth-btn">
+                    Update Profile
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script defer src="/js/pages/edit_profile.js"></script>
+<%- include("partials/footer") %>

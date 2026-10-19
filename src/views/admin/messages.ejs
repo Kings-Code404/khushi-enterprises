@@ -1,0 +1,36 @@
+<%- include("../partials/admin-header", { title: "Contact Messages | Khushi Enterprises" }) %>
+
+<section class="admin-dashboard">
+
+    <div class="dashboard-header">
+        <h1>Contact Messages</h1>
+        <p>View customer inquiries and feedback.</p>
+    </div>
+
+    <div class="admin-table-box">
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Subject</th>
+                    <th>Message</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="messagesTable">
+                <tr>
+                    <td colspan="6">Loading messages...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+
+
+<script defer src="/js/pages/admin_messages.js"></script>
+<%- include("../partials/admin-footer") %>

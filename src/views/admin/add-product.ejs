@@ -1,0 +1,39 @@
+<%- include("../partials/admin-header", { title: "Add Product | Khushi Enterprises" }) %>
+
+<section class="admin-dashboard">
+
+    <div class="dashboard-header">
+        <h1>Add Product</h1>
+        <p>Add a new beanbag product.</p>
+    </div>
+
+    <form class="admin-form" id="addProductForm" enctype="multipart/form-data">
+
+        <input type="text" name="product_name" placeholder="Product Name" required>
+
+        <textarea name="description" placeholder="Product Description"></textarea>
+
+        <input type="text" name="size" placeholder="Size">
+
+        <input type="text" name="color" placeholder="Color">
+
+        <input type="text" name="material" placeholder="Material">
+
+        <input type="number" name="price" placeholder="Price" required>
+
+        <input type="number" name="stock" placeholder="Stock">
+
+        <input type="file" name="image" accept="image/*">
+
+        <button type="submit" class="btn">
+            Add Product
+        </button>
+
+    </form>
+
+</section>
+
+
+
+<script defer src="/js/pages/admin_add_product.js"></script>
+<%- include("../partials/admin-footer") %>
